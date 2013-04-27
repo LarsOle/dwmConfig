@@ -57,9 +57,9 @@ static const char *volumeDown[] = { "/home/lars/bin/volume.sh", "-d", "5", NULL}
 static Key keys[] = {
 	/* modifier                     key        				function        argument */
 	{ MODKEY,                       XK_d,      				spawn,          {.v = dmenucmd } },
-	{ MODKEY,             			XK_Return, 				spawn,          {.v = termcmd } },
-	{ 0,							0x1008ff13,			 	spawn, 			{.v = volumeUp} },
-	{ 0,							0x1008ff11, 			spawn, 			{.v = volumeDown} },
+	{ MODKEY,             		XK_Return, 				spawn,          {.v = termcmd } },
+	{ 0,				0x1008ff13,			 	spawn, 		{.v = volumeUp} },
+	{ 0,				0x1008ff11, 				spawn, 		{.v = volumeDown} },
 	{ MODKEY,                       XK_b,      				togglebar,      {0} },
 	{ MODKEY,                       XK_j,      				focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      				focusstack,     {.i = -1 } },
